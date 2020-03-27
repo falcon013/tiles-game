@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tiles-Game</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+</head>
+<body>
+
+<div class="container-fluid mt-5">
+    <div class="row">
+        <div class="col-2 float-left ml-5">
+            <label style="font-weight: bold">Rules: </label>
+            <p>1. Board has two card of matching colors. You see back side of the card. </p>
+            <p>1. Choose one card  on the board, it flip to shows the color.</p>
+            <p>2. Choose second card to guess the matching color.</p>
+            <p>3. If both chosen cards are a matching color, they disappear from the board. </p>
+            <p>4. If the cards are not a match they are turned back over and it is now the next turn.</p>
+            <p>5. The game continues until no cards left to open.</p>
+
+
+        </div>
+        <div class="col">
+            <div class="container" id="tiles" >
+                <!-- Tiles will go in here -->
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col ml-5">
+            <button id="startGameButton" class="btn-outline-primary" onclick="startGame(this)">Start Game</button>
+        </div>
+    </div>
+</div>
+
+
+
+<script type="text/javascript" src="js/tiles-game.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script>
+    buildTiles()
+</script>
+</body>
+</html>
